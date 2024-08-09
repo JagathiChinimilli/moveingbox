@@ -1,0 +1,11 @@
+let score=0;
+let box=document.getElementById("box");
+let display=document.getElementById("score");
+
+box.addEventListener('click',function(){
+     score++;
+     display.textContent=score;
+     box.style.top=math.random()*90+"%";
+     box.style.left=math.random()*90+"%";
+});
+setTimeout(()=> alert("game over !your score is"+score),10000);
